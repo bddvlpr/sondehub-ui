@@ -8,7 +8,11 @@ const config = {
 	preprocess: preprocess({ postcss: true }),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			$routes: './src/routes',
+			$components: './src/components'
+		}
 	}
 };
 
